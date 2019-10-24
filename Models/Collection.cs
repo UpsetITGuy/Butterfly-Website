@@ -15,7 +15,6 @@ namespace ButterflyWebsite.Models
         public string Sex { get; set; }
         public double Latitude { get; set; }
         public double Longitude { get; set; }
-        public double Accuracy { get; set; }
         public string ImagePath { get; set; }
     }
 }
