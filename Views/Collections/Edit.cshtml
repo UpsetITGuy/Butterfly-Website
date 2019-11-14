@@ -55,14 +55,14 @@
             <div id="map"></div>
             <script>
             // Initialize and add the map
-            function initMap() {
-                // The location of Uluru
-                let uluru = {lat: -25.344, lng: 131.036};
-                // The map, centered at Uluru
+                function initMap() {
+                // The location of Logitude and Latitude
+                let location = {lat: @Model.Latitude, lng: @Model.Longitude};
+                // The map, centered at Logitude and Latitude
                 let map = new google.maps.Map(
-                document.getElementById('map'), {zoom: 4, center: uluru});
-                // The marker, positioned at Uluru
-                let marker = new google.maps.Marker({position: uluru, map: map});
+                document.getElementById('map'), {zoom: 4, center: location});
+                // The marker, positioned at Logitude and Latitude
+                let marker = new google.maps.Marker({position: location, map: map});
             }
             </script>
             <!--Load the API from the specified URL
